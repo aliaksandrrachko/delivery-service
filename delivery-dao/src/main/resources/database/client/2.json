@@ -1,0 +1,28 @@
+{
+  "id": 2,
+  "email": "eget.odio@Donec.ca",
+  "username": "Armand Parrish",
+  "firstName": "Cleo",
+  "lastName": "Macias",
+  "middleName": "Gretchen",
+  "phoneNumber": {
+    "countryCode": "375",
+    "nationalNumber": "296908407"
+  },
+  "address": {
+    "country": "Беларусь",
+    "region": "Гродненская",
+    "district": "Гродненский",
+    "cityName": "Kutorejo",
+    "streetName": "Gerald",
+    "postalCode": "230005",
+    "houseNumber": "07",
+    "apartmentNumber": "4292"
+  },
+  "gender": "MALE",
+  "birthday": [
+    2021,
+    3,
+    1
+  ]
+}

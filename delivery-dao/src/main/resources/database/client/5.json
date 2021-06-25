@@ -1,0 +1,28 @@
+{
+  "id": 5,
+  "email": "nec@dolorsit.co.uk",
+  "username": "Hollee Mejia",
+  "firstName": "Winter",
+  "lastName": "Vasquez",
+  "middleName": "Brenda",
+  "phoneNumber": {
+    "countryCode": "375",
+    "nationalNumber": "337728818"
+  },
+  "addressDto": {
+    "country": "Беларусь",
+    "region": "Гродненская",
+    "district": "Гродненский",
+    "cityName": "Matagami",
+    "streetName": "Barnett",
+    "postalCode": "N2M",
+    "houseNumber": "0866",
+    "apartmentNumber": "245"
+  },
+  "gender": "FEMALE",
+  "birthday": [
+    2020,
+    12,
+    7
+  ]
+}

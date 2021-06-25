@@ -1,0 +1,28 @@
+{
+  "id": 3,
+  "email": "ligula.eu@litoratorquent.net",
+  "username": "Azalia Rosario",
+  "firstName": "Raven",
+  "lastName": "Barry",
+  "middleName": "Jordan",
+  "phoneNumber": {
+    "countryCode": "375",
+    "nationalNumber": "296270309"
+  },
+  "addressDto": {
+    "country": "Беларусь",
+    "region": "Гродненская",
+    "district": "Гродненский",
+    "cityName": "Shangshuai",
+    "streetName": "Prairieview",
+    "postalCode": "230005",
+    "houseNumber": "05843",
+    "apartmentNumber": "07"
+  },
+  "gender": "MALE",
+  "birthday": [
+    2022,
+    2,
+    25
+  ]
+}

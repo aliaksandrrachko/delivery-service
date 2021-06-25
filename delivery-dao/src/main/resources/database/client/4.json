@@ -1,0 +1,28 @@
+{
+  "id": 4,
+  "email": "mauris@malesuada.org",
+  "username": "Claire Contreras",
+  "firstName": "Kimberly",
+  "lastName": "Castaneda",
+  "middleName": "Darryl",
+  "phoneNumber": {
+    "countryCode": "375",
+    "nationalNumber": "292424054"
+  },
+  "addressDto": {
+    "country": "Беларусь",
+    "region": "Гродненская",
+    "district": "Гродненский",
+    "cityName": "Shuicha",
+    "streetName": "Fulton",
+    "postalCode": "230005",
+    "houseNumber": "8546",
+    "apartmentNumber": "702"
+  },
+  "gender": "MALE",
+  "birthday": [
+    2021,
+    10,
+    23
+  ]
+}
