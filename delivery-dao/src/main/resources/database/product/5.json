@@ -1,0 +1,23 @@
+{
+  "id": 5,
+  "title": "Lenovo ideaPad 14",
+  "price": 3054.09,
+  "count": 14,
+  "storeId": 3,
+  "attributes": {
+    "year": "2020",
+    "processor": "Intel core i7",
+    "OSU": "16GB"
+  },
+  "categories": [
+    {
+      "categoryName": "Lenovo"
+    },
+    {
+      "categoryName": "computer"
+    },
+    {
+      "categoryName": "notebook"
+    }
+  ]
+}

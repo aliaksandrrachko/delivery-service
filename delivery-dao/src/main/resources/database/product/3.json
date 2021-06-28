@@ -1,0 +1,23 @@
+{
+  "id": 3,
+  "title": "Asus VivoBook S15",
+  "price": 2099.09,
+  "count": 4,
+  "storeId": 2,
+  "attributes": {
+    "year": "2019",
+    "processor": "Intel core i5",
+    "OSU": "8GB"
+  },
+  "categories": [
+    {
+      "categoryName": "Asus"
+    },
+    {
+      "categoryName": "computer"
+    },
+    {
+      "categoryName": "notebook"
+    }
+  ]
+}

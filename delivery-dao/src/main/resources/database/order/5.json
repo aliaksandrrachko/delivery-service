@@ -1,0 +1,37 @@
+{
+  "id": 5,
+  "orderStatus": "CREATED",
+  "client": {
+    "id": 6,
+    "email": "urna.Vivamus.molestie@suscipitest.ca",
+    "firstName": "Keefe",
+    "lastName": "Terry",
+    "middleName": "Celeste",
+    "phoneNumber": {
+      "countryCode": "375",
+      "nationalNumber": "443526222"
+    },
+    "address": {
+      "country": "Беларусь",
+      "region": "Гродненская",
+      "district": "Гродненский",
+      "cityName": "Montes Claros",
+      "streetName": "Kensington",
+      "postalCode": "39400-000",
+      "houseNumber": "78523",
+      "apartmentNumber": "77"
+    },
+    "gender": "MALE",
+    "birthday": [
+      2021,
+      8,
+      23
+    ]
+  },
+  "basket": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+  }
+}

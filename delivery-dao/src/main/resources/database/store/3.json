@@ -1,0 +1,23 @@
+{
+  "id": 3,
+  "email": "5element@mail.ru",
+  "name": "5 element",
+  "phoneNumber": {
+    "countryCode": "375",
+    "nationalNumber": "333456789"
+  },
+  "address": {
+    "country": "Belarus",
+    "region": "Hrodna",
+    "district": "Hrodna",
+    "cityName": "Hrodna",
+    "streetName": "safd",
+    "postalCode": "3238asf8",
+    "houseNumber": "461",
+    "apartmentNumber": "18"
+  },
+  "additionalInfo": {
+    "reviews": "84",
+    "clients": "2308"
+  }
+}

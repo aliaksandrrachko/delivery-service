@@ -1,0 +1,23 @@
+{
+  "id": 4,
+  "email": "vipcomp@mail.ru",
+  "name": "Vip comp",
+  "phoneNumber": {
+    "countryCode": "375",
+    "nationalNumber": "333456119"
+  },
+  "address": {
+    "country": "Belarus",
+    "region": "Hrodna",
+    "district": "Hrodna",
+    "cityName": "Hrodna",
+    "streetName": "One Street",
+    "postalCode": "323884sf8",
+    "houseNumber": "4864",
+    "apartmentNumber": "18"
+  },
+  "additionalInfo": {
+    "reviews": "844",
+    "clients": "258"
+  }
+}

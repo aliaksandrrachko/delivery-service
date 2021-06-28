@@ -1,0 +1,23 @@
+{
+  "id": 4,
+  "title": "Asus ZennBook 14",
+  "price": 2549.09,
+  "count": 2,
+  "storeId": 4,
+  "attributes": {
+    "year": "2020",
+    "processor": "Intel core i7",
+    "OSU": "16GB"
+  },
+  "categories": [
+    {
+      "categoryName": "Asus"
+    },
+    {
+      "categoryName": "computer"
+    },
+    {
+      "categoryName": "notebook"
+    }
+  ]
+}

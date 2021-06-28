@@ -1,7 +1,6 @@
 {
   "id": 6,
   "email": "urna.Vivamus.molestie@suscipitest.ca",
-  "username": "Isabella Ford",
   "firstName": "Keefe",
   "lastName": "Terry",
   "middleName": "Celeste",
@@ -9,7 +8,7 @@
     "countryCode": "375",
     "nationalNumber": "443526222"
   },
-  "addressDto": {
+  "address": {
     "country": "Беларусь",
     "region": "Гродненская",
     "district": "Гродненский",

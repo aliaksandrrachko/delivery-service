@@ -2,17 +2,17 @@ package by.exposit.service.services;
 
 import by.exposit.delivery.api.dao.IClientDao;
 import by.exposit.delivery.api.services.IClientService;
+import by.exposit.delivery.core.annotations.InjectByType;
+import by.exposit.delivery.core.annotations.Singleton;
 import by.exposit.delivery.entities.Client;
 
 import java.util.List;
 
+@Singleton
 public class ClientService implements IClientService {
 
+    @InjectByType
     private IClientDao clientDao;
-
-    public ClientService(IClientDao clientDao) {
-        this.clientDao = clientDao;
-    }
 
     @Override
     public List<Client> findAll() {

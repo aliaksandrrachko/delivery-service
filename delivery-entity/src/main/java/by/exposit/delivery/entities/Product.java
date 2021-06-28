@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
 import java.math.BigDecimal;
@@ -18,6 +19,7 @@ import java.util.Set;
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@ToString(callSuper = true)
 @SuperBuilder
 public class Product extends AEntity<Long>{
 
@@ -28,6 +30,5 @@ public class Product extends AEntity<Long>{
 
     @Builder.Default
     private Map<String, String> attributes = new HashMap<>();
-
     private Set<Category> categories;
 }

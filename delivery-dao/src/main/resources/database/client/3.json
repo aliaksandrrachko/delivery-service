@@ -1,7 +1,6 @@
 {
   "id": 3,
   "email": "ligula.eu@litoratorquent.net",
-  "username": "Azalia Rosario",
   "firstName": "Raven",
   "lastName": "Barry",
   "middleName": "Jordan",
@@ -9,7 +8,7 @@
     "countryCode": "375",
     "nationalNumber": "296270309"
   },
-  "addressDto": {
+  "address": {
     "country": "Беларусь",
     "region": "Гродненская",
     "district": "Гродненский",

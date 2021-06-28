@@ -1,7 +1,6 @@
 {
   "id": 5,
   "email": "nec@dolorsit.co.uk",
-  "username": "Hollee Mejia",
   "firstName": "Winter",
   "lastName": "Vasquez",
   "middleName": "Brenda",
@@ -9,7 +8,7 @@
     "countryCode": "375",
     "nationalNumber": "337728818"
   },
-  "addressDto": {
+  "address": {
     "country": "Беларусь",
     "region": "Гродненская",
     "district": "Гродненский",

@@ -14,6 +14,8 @@
         <module>delivery-dao</module>
         <module>delivery-main</module>
         <module>delivery-service</module>
+        <module>delivery-core</module>
+        <module>delivery-demo</module>
     </modules>
 
     <properties>
@@ -43,6 +45,16 @@
             <dependency>
                 <groupId>by.exposit</groupId>
                 <artifactId>delivery-service</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>by.exposit</groupId>
+                <artifactId>delivery-core</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>by.exposit</groupId>
+                <artifactId>delivery-demo</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 
@@ -75,6 +87,24 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>1.2.3</version>
+            </dependency>
+
+            <!-- FOR CORE -->
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>0.9.12</version>
+            </dependency>
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

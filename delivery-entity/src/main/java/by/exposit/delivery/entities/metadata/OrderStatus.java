@@ -12,7 +12,8 @@ public enum OrderStatus {
     ACCEPTED(2),
     CONFIRMED(3),
     DELIVERY(4),
-    DELIVERED(5);
+    DELIVERED(5),
+    CANCELED(6);
 
     private final int statusCode;
 

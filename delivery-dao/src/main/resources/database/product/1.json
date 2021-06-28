@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "title": "Notebook HP pavilion 15",
+  "price": 2199.09,
+  "count": 14,
+  "storeId": 1,
+  "attributes": {
+    "year": "2020",
+    "processor": "Ryzen 7 4700u",
+    "OSU": "16GB"
+  },
+  "categories": [
+    {
+      "categoryName": "HP"
+    },
+    {
+      "categoryName": "computer"
+    },
+    {
+      "categoryName": "notebook"
+    }
+  ]
+}

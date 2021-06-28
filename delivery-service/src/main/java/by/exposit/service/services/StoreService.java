@@ -2,17 +2,17 @@ package by.exposit.service.services;
 
 import by.exposit.delivery.api.dao.IStoreDao;
 import by.exposit.delivery.api.services.IStoreService;
+import by.exposit.delivery.core.annotations.InjectByType;
+import by.exposit.delivery.core.annotations.Singleton;
 import by.exposit.delivery.entities.Store;
 
 import java.util.List;
 
+@Singleton
 public class StoreService implements IStoreService {
 
+    @InjectByType
     private IStoreDao storeDao;
-
-    public StoreService(IStoreDao storeDao) {
-        this.storeDao = storeDao;
-    }
 
     @Override
     public List<Store> findAll() {

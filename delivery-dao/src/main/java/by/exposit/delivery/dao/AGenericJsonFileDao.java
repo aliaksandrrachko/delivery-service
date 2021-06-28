@@ -4,8 +4,10 @@ import by.exposit.delivery.api.dao.IAGenericDao;
 import by.exposit.delivery.entities.AEntity;
 import by.exposit.delivery.utils.JsonDataFileUploader;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public abstract class AGenericJsonFileDao<T extends AEntity<K>, K extends Number> implements IAGenericDao<T, K> {
@@ -13,10 +15,13 @@ public abstract class AGenericJsonFileDao<T extends AEntity<K>, K extends Number
     private final Class<T> clazz;
     protected final String dataFolderPath;
 
-    protected List<T> cache;
+    protected LinkedList<T> cache;
 
     protected void initCacheMethod() {
         cache = JsonDataFileUploader.load(clazz, dataFolderPath);
+        if (cache == null) {
+            cache = new LinkedList<>();
+        }
     }
 
     protected AGenericJsonFileDao(Class<T> clazz, String dataFolderPath) {
@@ -41,7 +46,7 @@ public abstract class AGenericJsonFileDao<T extends AEntity<K>, K extends Number
 
     @Override
     public void delete(K id) {
-        cache = cache.parallelStream().filter(e -> !e.getId().equals(id)).collect(Collectors.toList());
+        cache = cache.parallelStream().filter(e -> !e.getId().equals(id)).collect(Collectors.toCollection(LinkedList::new));
         JsonDataFileUploader.delete(id, dataFolderPath);
     }
 
@@ -68,7 +73,7 @@ public abstract class AGenericJsonFileDao<T extends AEntity<K>, K extends Number
         if (entityInCache == null) {
             return Optional.empty();
         } else {
-            cache = cache.parallelStream().filter(e -> !e.getId().equals(id)).collect(Collectors.toList());
+            cache = cache.parallelStream().filter(e -> !e.getId().equals(id)).collect(Collectors.toCollection(LinkedList::new));
             entity.setId(id);
             cache.add(entity);
             JsonDataFileUploader.save(entity, dataFolderPath);

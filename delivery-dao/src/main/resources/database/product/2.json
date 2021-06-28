@@ -1,0 +1,18 @@
+{
+  "id": 2,
+  "title": "MacBook Pro",
+  "price": 3699.09,
+  "count": 10,
+  "storeId": 1,
+  "attributes": {
+    "year": "2020"
+  },
+  "categories": [
+    {
+      "categoryName": "mac"
+    },
+    {
+      "categoryName": "computer"
+    }
+  ]
+}

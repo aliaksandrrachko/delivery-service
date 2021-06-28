@@ -6,20 +6,19 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.util.Map;
-import java.util.Set;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
+@ToString(callSuper = true)
 @SuperBuilder
 public class Store extends AEntity<Long>{
 
+    private String email;
     private String name;
-    private Address address;
     private PhoneNumber phoneNumber;
+    private Address address;
     private Map<String, String> additionalInfo;
-
-    private Set<Product> products;
 }

@@ -1,0 +1,35 @@
+{
+  "id": 1,
+  "orderStatus": "CREATED",
+  "client": {
+    "id": 1,
+    "email": "admin@mail.ru",
+    "firstName": "Aliaksandr",
+    "lastName": "Petrov",
+    "middleName": "Petrovich",
+    "phoneNumber": {
+      "countryCode": "375",
+      "nationalNumber": "292965416"
+    },
+    "address": {
+      "country": "Беларусь",
+      "region": "Гродненская",
+      "district": "Гродненский",
+      "cityName": "Гродно",
+      "streetName": "International",
+      "postalCode": "230005",
+      "houseNumber": "278",
+      "apartmentNumber": "4720"
+    },
+    "gender": "MALE",
+    "birthday": [
+      1995,
+      4,
+      5
+    ]
+  },
+  "basket" : {
+    "1": 1,
+    "2": 3
+  }
+}

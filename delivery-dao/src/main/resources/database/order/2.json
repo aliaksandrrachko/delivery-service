@@ -1,0 +1,35 @@
+{
+  "id": 2,
+  "orderStatus": "CREATED",
+  "client": {
+    "id": 5,
+    "email": "nec@dolorsit.co.uk",
+    "firstName": "Winter",
+    "lastName": "Vasquez",
+    "middleName": "Brenda",
+    "phoneNumber": {
+      "countryCode": "375",
+      "nationalNumber": "337728818"
+    },
+    "address": {
+      "country": "Беларусь",
+      "region": "Гродненская",
+      "district": "Гродненский",
+      "cityName": "Matagami",
+      "streetName": "Barnett",
+      "postalCode": "N2M",
+      "houseNumber": "0866",
+      "apartmentNumber": "245"
+    },
+    "gender": "FEMALE",
+    "birthday": [
+      2020,
+      12,
+      7
+    ]
+  },
+  "basket": {
+    "3": 1,
+    "1": 3
+  }
+}

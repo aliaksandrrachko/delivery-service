@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "email": "madiamarket@malesuada.org",
+  "name": "Claire Contreras",
+  "phoneNumber": {
+    "countryCode": "375",
+    "nationalNumber": "292424054"
+  },
+  "address": {
+    "country": "Беларусь",
+    "region": "Гродненская",
+    "district": "Гродненский",
+    "cityName": "Shuicha",
+    "streetName": "Fulton",
+    "postalCode": "230005",
+    "houseNumber": "8546",
+    "apartmentNumber": "702"
+  },
+  "additionalInfo": {
+    "reviews": "6415",
+    "clients": "68687"
+  }
+}

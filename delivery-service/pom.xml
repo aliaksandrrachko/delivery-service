@@ -21,6 +21,10 @@
             <groupId>by.exposit</groupId>
             <artifactId>delivery-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>by.exposit</groupId>
+            <artifactId>delivery-core</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

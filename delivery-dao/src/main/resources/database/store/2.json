@@ -1,0 +1,23 @@
+{
+  "id": 2,
+  "email": "superStore@mail.ru",
+  "name": "Some Store",
+  "phoneNumber": {
+    "countryCode": "375",
+    "nationalNumber": "123456789"
+  },
+  "address": {
+    "country": "Belarus",
+    "region": "Hrodna",
+    "district": "Hrodna",
+    "cityName": "Hrodna",
+    "streetName": "safd",
+    "postalCode": "3238asf8",
+    "houseNumber": "561",
+    "apartmentNumber": "14"
+  },
+  "additionalInfo": {
+    "reviews": "14",
+    "clients": "208"
+  }
+}

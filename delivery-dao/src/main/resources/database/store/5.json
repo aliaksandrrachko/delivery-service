@@ -1,0 +1,23 @@
+{
+  "id": 5,
+  "email": "ShopOne@mail.ru",
+  "name": "Shop one",
+  "phoneNumber": {
+    "countryCode": "375",
+    "nationalNumber": "333454119"
+  },
+  "address": {
+    "country": "Belarus",
+    "region": "Hrodna",
+    "district": "Hrodna",
+    "cityName": "Hrodna",
+    "streetName": "One Street",
+    "postalCode": "3243884sf8",
+    "houseNumber": "164",
+    "apartmentNumber": "678"
+  },
+  "additionalInfo": {
+    "reviews": "844",
+    "clients": "2148"
+  }
+}
