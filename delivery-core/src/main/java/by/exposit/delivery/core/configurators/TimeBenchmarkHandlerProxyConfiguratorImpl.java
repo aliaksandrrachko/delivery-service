@@ -1,6 +1,7 @@
 package by.exposit.delivery.core.configurators;
 
 import by.exposit.delivery.core.annotations.TimeBenchmark;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.InvocationTargetException;
@@ -21,10 +22,11 @@ public class TimeBenchmarkHandlerProxyConfiguratorImpl extends AbstractProxyConf
     }
 
     @Override
-    protected Object getInvocationHandlerLogic(Object t, Method method, Object[] args)
+    @SneakyThrows
+    protected Object getInvocationHandlerLogic(Object t, Method method, Object[] args, Class<?> implClass)
             throws InvocationTargetException, IllegalAccessException {
         Object result;
-        if (method.isAnnotationPresent(TimeBenchmark.class)) {
+        if (implClass.getMethod(method.getName()).isAnnotationPresent(TimeBenchmark.class)) {
             LocalTime startTime = LocalTime.now();
             result = method.invoke(t, args);
             LocalTime finishTime = LocalTime.now();
@@ -36,10 +38,10 @@ public class TimeBenchmarkHandlerProxyConfiguratorImpl extends AbstractProxyConf
     }
 
     private static final String TIME_BENCHMARK_MESSAGE_PATTERN =
-                    "============================================\n" +
+                    "\n==============================================\n" +
                     "                TIME BENCHMARK:              \n" +
                     " Method '{}' working {} nano sec.\n" +
-                    "============================================\n";
+                    "==============================================\n";
 
     private void printTimeOfWorkMethod(Method method, LocalTime start, LocalTime finish) {
         long time = finish.getNano() - start.getNano();

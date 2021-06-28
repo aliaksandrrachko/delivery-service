@@ -17,7 +17,7 @@ public class DeprecatedHandlerProxyConfiguratorImpl extends AbstractProxyConfigu
     }
 
     @Override
-    protected Object getInvocationHandlerLogic(Object t, Method method, Object[] args)
+    protected Object getInvocationHandlerLogic(Object t, Method method, Object[] args, Class<?> implClass)
             throws IllegalAccessException, InvocationTargetException {
         log.warn("You using deprecated method: {}", method.getName());
         return method.invoke(t, args);

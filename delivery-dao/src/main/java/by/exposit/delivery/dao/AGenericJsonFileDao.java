@@ -7,7 +7,6 @@ import by.exposit.delivery.utils.JsonDataFileUploader;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
-import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public abstract class AGenericJsonFileDao<T extends AEntity<K>, K extends Number> implements IAGenericDao<T, K> {
@@ -15,7 +14,7 @@ public abstract class AGenericJsonFileDao<T extends AEntity<K>, K extends Number
     private final Class<T> clazz;
     protected final String dataFolderPath;
 
-    protected LinkedList<T> cache;
+    protected List<T> cache;
 
     protected void initCacheMethod() {
         cache = JsonDataFileUploader.load(clazz, dataFolderPath);

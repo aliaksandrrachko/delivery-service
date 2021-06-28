@@ -34,10 +34,15 @@ public class JsonDataFileUploader {
         OBJECT_MAPPER.findAndRegisterModules();
     }
 
-    public static <T extends AEntity<K>, K extends Number> LinkedList<T> load(Class<T> clazz, String folderName) {
+    public static <T extends AEntity<K>, K extends Number> List<T> load(Class<T> clazz, String folderName) {
         LinkedList<T> result = new LinkedList<>();
         try {
-            File[] files = new File(folderName).listFiles();
+            File dataBaseFolder = new File(folderName);
+            if (!dataBaseFolder.exists()){
+                Files.createDirectory(dataBaseFolder.toPath());
+            }
+
+            File[] files = dataBaseFolder.listFiles();
             if (files == null) {
                 return result;
             }
@@ -47,7 +52,8 @@ public class JsonDataFileUploader {
             }
             return result;
         } catch (IOException e) {
-            log.error("Exception happened when you trying load data from file {}, message: {}", folderName, e.getMessage());
+            log.error("Exception happened when you trying load data from file {}, message: {}, database is empty.",
+                    folderName, e.getMessage());
         }
         return result;
     }

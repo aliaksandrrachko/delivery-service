@@ -25,10 +25,10 @@ public abstract class AbstractProxyConfigurator implements ProxyConfigurator {
         if (checkConditionsForWrappingInProxy(implClass)) {
             if (implClass.getInterfaces().length == 0){
                 return Enhancer.create(implClass,
-                        (InvocationHandler) (o, method, args) -> getInvocationHandlerLogic(t, method, args));
+                        (InvocationHandler) (o, method, args) -> getInvocationHandlerLogic(t, method, args, implClass));
             }
             return Proxy.newProxyInstance(implClass.getClassLoader(), implClass.getInterfaces(),
-                    (proxy, method, args) -> getInvocationHandlerLogic(t, method, args));
+                    (proxy, method, args) -> getInvocationHandlerLogic(t, method, args, implClass));
         } else {
             return t;
         }
@@ -47,6 +47,6 @@ public abstract class AbstractProxyConfigurator implements ProxyConfigurator {
      * @param method invoked method
      * @param args original's method arguments
      */
-    protected abstract Object getInvocationHandlerLogic(Object t, Method method, Object[] args)
+    protected abstract Object getInvocationHandlerLogic(Object t, Method method, Object[] args, Class<?> implClass)
             throws IllegalAccessException, InvocationTargetException;
 }

@@ -4,6 +4,7 @@ import by.exposit.delivery.api.utils.IDemo;
 import by.exposit.delivery.api.utils.IMainDemo;
 import by.exposit.delivery.core.annotations.InjectByType;
 import by.exposit.delivery.core.annotations.Singleton;
+import by.exposit.delivery.core.annotations.TimeBenchmark;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ public class MainDemoService implements IMainDemo {
     @InjectByType(aClass = IDemo.class)
     private List<IDemo> demos;
 
+    @TimeBenchmark
     @Override
     public void mainDemo() {
         if (this.demos != null && !demos.isEmpty()){
