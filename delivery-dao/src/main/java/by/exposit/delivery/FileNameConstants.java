@@ -3,8 +3,8 @@ package by.exposit.delivery;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
-import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Paths;
 
 @Slf4j
@@ -15,13 +15,15 @@ public final class FileNameConstants {
     private static final String PATH_TO_RESOURCES_FOLDER;
 
     static {
-        URI uri = null;
+        URL res = FileNameConstants.class.getClassLoader().getResource("database");
+        File file = null;
         try {
-            uri = ClassLoader.getSystemResource("database").toURI();
+            file = Paths.get(res.toURI()).toFile();
         } catch (URISyntaxException e) {
-            log.warn("Database not found: {}", e.getMessage());
+            e.printStackTrace();
         }
-        PATH_TO_RESOURCES_FOLDER = Paths.get(uri).toString();
+        PATH_TO_RESOURCES_FOLDER = file.getAbsolutePath();
+        log.info("Path to resource folder: '{}'", PATH_TO_RESOURCES_FOLDER);
     }
 
     public static final String CLIENT_FOLDER_PATH = PATH_TO_RESOURCES_FOLDER + File.separator + "client";
